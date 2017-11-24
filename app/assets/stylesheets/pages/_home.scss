@@ -1,1 +1,48 @@
 // Specific CSS for your home-page
+.banner {
+  background-position: center;
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 75vh;
+  padding:0 20px;
+  display: block;
+
+
+}
+
+.banner-content{
+  text-align: center;
+  margin: auto;
+  padding-top: 50px;
+
+}
+
+.btn-margin{
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.add-center {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.cocktail-name {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cocktail-des-ing {
+  text-align: left;
+  margin-left: 8px;
+  display: flex;
+
+}

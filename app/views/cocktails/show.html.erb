@@ -1,8 +1,8 @@
-  <div><%= @cocktail.name %></div>
+  <div class="btn-margin cocktail-name" ><%= @cocktail.name %></div>
   <% @cocktail.doses.each do |d| %>
-    <div><%= d.description %> <%= d.ingredient.name %></div>
+    <div class="cocktail-des-ing"><%= d.description %> <%= d.ingredient.name %></div>
 
   <% end  %>
   <br></br>
-  <div><%= link_to "add dose", new_cocktail_dose_path(@cocktail) %></div>
-  <%= link_to "back to all cocktails", cocktails_path %>
+  <div><%= link_to "add dose", new_cocktail_dose_path(@cocktail), class: "btn btn-primary btn-margin"%></div>
+  <%= link_to "back to all cocktails", cocktails_path, class: "btn btn-primary btn-margin" %>
