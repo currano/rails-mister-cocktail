@@ -1,5 +1,4 @@
-<%= simple_form_for @cocktails do |f| %>
-  <br></br>
-    <%= f.input :name, placeholder: "name", :required => true%>
-    <%= submit %>
-<%= end %>
+<%= simple_form_for [@cocktail] do |f| %>
+  <%= f.input :name, placeholder: "name", :required => true %>
+  <%= f.submit %>
+<% end %>

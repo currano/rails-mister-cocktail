@@ -1,6 +1,8 @@
-<h1>test</h1>
+<h1>Cocktail List</h1>
+
+<div><%= link_to "add", new_cocktail_path %></div>
 <% @cocktails.each do |cocktail| %>
- <h2><%= cocktail.cocktail %></h2>
+<div><%= cocktail.name %></div>
  <%= link_to "show", cocktail_path(cocktail)%>
  <%= link_to "delete", cocktail_path(cocktail),
   method: :delete,
